@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../images/banner.jpg";
+import  about from "../../images/about.png";
 import "./About.css";
 const About = () => {
     return (
@@ -8,9 +8,7 @@ const About = () => {
                 <div class="section-header">
                     <h2>
                         Who Am I
-                        {/* <span class="highlight">
-                            <strong>John</strong>
-                        </span> */}
+
                     </h2>
                     <h5>
                         <em>
@@ -29,7 +27,7 @@ const About = () => {
                     <div class="col-sm-4 col-sm-offset-1 scrollimation fade-right in">
                         <img
                             class="img-responsive img-circle img-center"
-                            src={profile}
+                            src={about}
                             alt=""
                         />
                     </div>

@@ -1,13 +1,11 @@
 import React from 'react';
 import Typical from 'react-typical'
-// import About from '../About/About';
-// import Navbar from '../Navbar/Navbar';
 import './Home.css'
 const Home = () => {
     return (
         <>
              <section  id="home">
-            {/* <Navbar></Navbar> */}
+
              <div class="overlay">
             <div class="container">
                 <div class="content-heading text-center">
@@ -25,7 +23,7 @@ const Home = () => {
                                     Frontend Developer
                                 </h1>
                     <p class="lead">I Love to create beautiful and amazing Websites.</p>
-                    <a href="#works" class="scroll goto-btn">Download Resume</a>
+                    <a href='https://drive.google.com/uc?export=download&id=1S0Pefi_6ZPLTGxxJLaC1X_GUI3F84UjN' class="scroll goto-btn">Download Resume</a>
                 </div>
         </div>
         </div>

@@ -76,10 +76,12 @@ em {
     display: block;
     max-width: 100%;
     height: auto;
+
 }
 img {
-    vertical-align: middle;
+    vertical-align:center;
     border: 0;
+
 }
 .col-sm-6{
     position: relative;

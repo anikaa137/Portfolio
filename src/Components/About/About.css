@@ -1,0 +1,162 @@
+#about {
+    padding: 40px 0;
+}
+#about {
+    background: #38A5DB;
+    color: #fff;
+    padding: 80px 0;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1100px;
+    }
+}
+.section-header {
+    padding: 40px 0;
+    text-align: center;
+}
+#about h2, #about h5 {
+    line-height: 24px;
+    font-weight: 300;
+}
+.section-header h5 {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+em {
+    font-style: italic;
+}
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-sm-4{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px){
+
+.col-sm-offset-1 {
+    margin-left: 8.33333333%;
+}
+}
+
+@media (min-width: 768px){
+
+.col-sm-4 {
+    width: 33.33333333%;
+    float: left;
+}
+}
+#about img{
+    box-shadow: 12px 0px 0px 12px rgb(255 255 255 / 20%), -12px 0px 0px 12px rgb(255 255 255 / 20%);
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+.col-sm-6{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px){
+
+.col-sm-offset-1 {
+    margin-left: 8.33333333%;
+}
+}
+@media (min-width: 768px){
+
+.col-sm-6 {
+    width: 50%;
+    float: left;
+}
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.color-theme ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-bottom: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.mi-about-content ul li:not(:last-child) {
+    margin-bottom: 3px;
+}
+.mi-about-content ul li {
+    list-style: none;
+
+}
+.mi-about-content ul li b {
+    min-width: 120px;
+    display: inline-block;
+    position: relative;
+    margin-right: 7px;
+}
+b, strong {
+    font-weight: bolder;
+}
+button {
+    cursor: pointer;
+}
+.mi-button {
+    position: relative;
+    padding: 0 30px;
+    background: #037fff;
+    color: #fff;
+    border: 0;
+    display: inline-block;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    height: 50px;
+    line-height: 50px;
+    transition: all .4s ease-out;
+}
+.mi-button {
+    margin-top: 15px;
+
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.card{
+    box-shadow: 12px 0px 0px 12px rgb(255 255 255 / 20%), -12px 0px 0px 12px rgb(255 255 255 / 20%);
+}

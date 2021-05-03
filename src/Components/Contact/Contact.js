@@ -1,11 +1,15 @@
 import { send } from 'emailjs-com';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { init } from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMailBulk, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Contact = () => {
+    useEffect(() => {
+        Aos.init({duration:2000})
+    },[])
     const [toSend, setToSend] = useState({
         from_name: '',
         message: '',
@@ -37,11 +41,11 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" style={{backgroundColor:" #38A5DB", color:"white", paddingTop:"50px"}}>
+        <div id="contact" style={{backgroundColor:" #38A5DB", color:"white", paddingTop:"50px"}} data-aos="fade-up">
             <div className="container form ">
                 <h1 className="pb-5 text-center title">CONTACT ME</h1>
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6" data-aos='fade-right'>
                         <h3 className="pb-3">Get in touch</h3>
                         <form onSubmit={onSubmit}>
                             <div className="mb-3">
@@ -87,7 +91,7 @@ const Contact = () => {
                             </div>
                         </form>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6" data-aos='fade-left'>
                         <div className="bg-white text-dark p-4 shadow-lg p-3 mb-5 bg-body rounded">
                             <div className="d-flex align-items-center">
                                 <div className="p-3">

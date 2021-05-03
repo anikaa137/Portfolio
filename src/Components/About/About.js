@@ -1,38 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import  about from "../../images/about.png";
 import "./About.css";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
-
-
-// Wrap every letter in a span
-// var textWrapper = document.querySelector('.ml14 .letters');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// anime.timeline({loop: true})
-//   .add({
-//     targets: '.ml14 .line',
-//     scaleX: [0,1],
-//     opacity: [0.5,1],
-//     easing: "easeInOutExpo",
-//     duration: 900
-//   }).add({
-//     targets: '.ml14 .letter',
-//     opacity: [0,1],
-//     translateX: [40,0],
-//     translateZ: 0,
-//     scaleX: [0.3, 1],
-//     easing: "easeOutExpo",
-//     duration: 800,
-//     offset: '-=600',
-//     delay: (el, i) => 150 + 25 * i
-//   }).add({
-//     targets: '.ml14',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-//   });
 const About = () => {
+    useEffect(() => {
+        Aos.init({duration:2000})
+      },[])
     return (
         <section id="about">
             <div class="container">
@@ -54,7 +29,7 @@ const About = () => {
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-sm-offset-1 scrollimation fade-right in">
+                    <div class="col-sm-4 col-sm-offset-1 scrollimation fade-right in" data-aos="flip-left">
                         <img
                             class="img-responsive img-circle img-center"
                             src={about}
@@ -64,7 +39,7 @@ const About = () => {
                     <div class="col-sm-6 col-sm-offset-1 scrollimation fade-left in">
 
 
-                        <div class="mi-about-content me-5">
+                        <div class="mi-about-content me-5" data-aos="flip-right">
                             <h3>
                                 I am{" "}
                                 <span class="color-theme readMore">Amina Anika</span>
@@ -118,7 +93,7 @@ const About = () => {
 
                         </div>
 
-                        <div class="d-flex justify-content-evenly mt-5">
+                        <div class="d-flex justify-content-evenly mt-5" data-aos="fade-up">
                         <div class="card" style={{ width: "18rem" }}>
                             <div class="card-body">
                                 <h1 class="card-title text-dark">

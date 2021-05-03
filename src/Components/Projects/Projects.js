@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import pakkapati from '../../images/pakka.PNG'
 import pakkapati2 from '../../images/pakkapati 2.PNG'
@@ -19,16 +19,23 @@ import 'photoswipe/dist/photoswipe.css'
 import 'photoswipe/dist/default-skin/default-skin.css'
 
 import { Gallery, Item } from 'react-photoswipe-gallery'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({duration:2000})
+  },[])
+
   return (
-    <div id="projects">
+    <div id="projects" data-aos="fade-up">
        <div class="mt-5 mb-5 p-5 ">
         <h1 className="projects text-center ml11 readMore">My projects </h1>
         <br />
         <br/>
-<div id="carouselExampleIndicators" class="carousel slide shadow-lg p-3 mb-5 bg-body rounded projects"  data-bs-ride="carousel">
+<div  id="carouselExampleIndicators" class="carousel slide shadow-lg p-3 mb-5 bg-body rounded projects"  data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -38,7 +45,7 @@ const Projects = () => {
     <div class="carousel-item active">
     <div class='container'>
         <div class="row">
-            <div class='col-md-6'>
+            <div class='col-md-6' data-aos="fade-left">
             <Gallery>
     <Item
       original={pakkapati}
@@ -83,7 +90,7 @@ const Projects = () => {
                       <h5 class="text-center">Click on the images!</h5>
   </Gallery>
             </div>
-            <div class='col-md-6'>
+            <div class='col-md-6' data-aos="fade-right">
                     <h3 class="text-center"> Flooring Service</h3>
                     <hr/>
                     <br/>
@@ -110,7 +117,7 @@ const Projects = () => {
     <div class="carousel-item">
     <div class='container'>
         <div class="row">
-            <div class='col-md-6'>
+            <div class='col-md-6'data-aos="fade-right">
             <Gallery>
     <Item
       original={happymart}
@@ -156,7 +163,7 @@ const Projects = () => {
 
   </Gallery>
             </div>
-            <div class='col-md-6'>
+            <div class='col-md-6'data-aos="fade-left">
                     <h3 class="text-center">HAPPY Mart</h3>
                     <hr />
                     <br/>
@@ -183,7 +190,7 @@ const Projects = () => {
     <div class="carousel-item">
     <div class='container'>
         <div class="row">
-            <div class='col-md-6'>
+            <div class='col-md-6'data-aos="fade-left">
             <Gallery>
     <Item
       original={vroom}
@@ -229,7 +236,7 @@ const Projects = () => {
 
   </Gallery>
             </div>
-            <div class='col-md-6'>
+            <div class='col-md-6'data-aos="fade-right">
                     <h3 class="text-center">Vroom Riders</h3>
                     <hr/>
                     <br/>

@@ -1,148 +1,173 @@
-// import React from 'react';
+import React from "react";
+import "./Projects.css";
+import pakkapati from '../../images/pakka.PNG'
+import pakkapati2 from '../../images/pakkapati 2.PNG'
+import pakkapati3 from '../../images/pakkapati 3.PNG'
+import pakkapati4 from '../../images/pakkapati 4.PNG'
 
-// const Projects = () => {
-//     return (
-//         <div>
-//             <section id="works">
-//         <div class="container">
-//             <div class="section-header">
-//                 <h2>My Works</h2>
-//                 <h5><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry</em></h5>
-//                 <div class="fancy"><span></span></div>
-//             </div>
+import 'photoswipe/dist/photoswipe.css'
+import 'photoswipe/dist/default-skin/default-skin.css'
 
-//             <div class="text-center">
-//                 <ul class="list-inline cat">
-//                     <li><a href="#" data-filter="*" class="active">All</a></li>
-//                     <li><a href="#" data-filter=".brand">Design</a></li>
-//                     <li><a href="#" data-filter=".web">Web</a></li>
-//                     <li><a href="#" data-filter=".app">Apps</a></li>
-//                     <li><a href="#" data-filter=".others">Others</a></li>
-//                 </ul>
-//             </div>
+import { Gallery, Item } from 'react-photoswipe-gallery'
 
-//         </div>
 
-//         <div class="container-fluid">
-//              <div id="itemsWork" class="row text-center isotope" style={{position: 'relative', overflow: 'hidden', height: '432px'}}>
 
-//                 {/* <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding brand others isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
-//                     <div class="box">
-//                         <div class="hover-bg">
-//                             <div class="hover-text off">
-//                                 <a title="Logo Identity Design" href="" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/01.jpg"/>
-//                                     <i class="fa fa-expand"></i>
-//                                 </a>
-//                                 <a href="#"><i class="fa fa-chain"></i></a>
-//                             <img src="img/portfolio/01.jpg" class="img-responsive" alt="Image"/>
-//                         </div>
-//                     </div>
-//                 </div> */}
+const Projects = () => {
+    return (
+      <div class="mt-5">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
 
-//                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding apps isotope-item" style={{position: 'absolute',left: '0px', top: '0px',  }}>
-//                     <div class="box">
-//                         <div class="hover-bg">
-//                             <div class="hover-text off">
-//                                 <a title="Mobile Application" href="img/portfolio/02.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/02.jpg">
-//                                     <i class="fa fa-expand"></i>
-//                                 </a>
-//                                 <a href="#"><i class="fa fa-chain"></i></a>
-//                             </div>
-//                             <img src="img/portfolio/02.jpg" class="img-responsive" alt="Image"/>
-//                         </div>
-//                     </div>
-//                 </div>
+      <div class='container'>
+        <div class="row">
+            <div class='col-md-6'>
+            <Gallery>
+    <Item
+      original={pakkapati}
+      thumbnail={pakkapati}
+      width="1024"
+      height="768"
+    >
+      {({ ref, open }) => (
+                          <img ref={ref} onClick={open} class="shadow p-3 mb-5 bg-body rounded" alt='' src={pakkapati} style={{width:'200px',height:'200px', margin:"7px", cursor:'pointer'}}/>
+      )}
+    </Item>
+    <Item
+      original={pakkapati2}
+      thumbnail={pakkapati2}
+      width="1024"
+      height="768"
+    >
+      {({ ref, open }) => (
+        <img ref={ref} onClick={open} alt='' src={pakkapati2} class="shadow p-3 mb-5 bg-body rounded" style={{width:'200px',height:'200px',margin:"7px", cursor:'pointer'}}/>
+      )}
+                      </Item>
+                      <Item
+      original={pakkapati3}
+      thumbnail={pakkapati3}
+      width="1024"
+      height="768"
+    >
+      {({ ref, open }) => (
+        <img ref={ref} onClick={open} alt='' src={pakkapati3} class="shadow p-3 mb-5 bg-body rounded" style={{width:'200px',height:'200px',margin:"7px", cursor:'pointer'}}/>
+      )}
+                      </Item>
+                      <Item
+      original={pakkapati4}
+      thumbnail={pakkapati4}
+      width="1024"
+      height="768"
+    >
+      {({ ref, open }) => (
+        <img ref={ref} onClick={open} alt='' src={pakkapati4} class="shadow p-3 mb-5 bg-body rounded" style={{width:'200px',height:'200px',margin:"7px", cursor:'pointer'}}/>
+      )}
+    </Item>
+  </Gallery>
+            </div>
+            <div class='col-md-6'>
+                    <h4>description</h4>
+                    <ul>
+                      <li>hello</li>
+                      <li>hi</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    </div>
 
-//                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others brand isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(678px, 0px, 0px);">
-//                     <div class="box">
-//                         <div class="hover-bg">
-//                             <div class="hover-text off">
-//                                 <a title="Freedom Project #1" href="img/portfolio/03.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/03.jpg">
-//                                     <i class="fa fa-expand"></i>
-//                                 </a>
-//                                 <a href="#"><i class="fa fa-chain"></i></a>
-//                             </div>
-//                             <img src="img/portfolio/03.jpg" class="img-responsive" alt="Image"/>
-//                         </div>
-//                     </div>
-//                 </div>
 
-//                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(1017px, 0px, 0px);">
-//                     <div class="box">
-//                         <div class="hover-bg">
-//                             <div class="hover-text off">
-//                                 <a title="Freedom Project #1" href="img/portfolio/04.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/04.jpg">
-//                                     <i class="fa fa-expand"></i>
-//                                 </a>
-//                                 <a href="#"><i class="fa fa-chain"></i></a>
-//                             </div>
-//                             <img src="img/portfolio/04.jpg" class="img-responsive" alt="Image"/>
-//                         </div>
-//                     </div>
-//                 </div>
+      <div class="carousel-item" data-bs-interval="2000">
+              <div class='container'>
+        <div class="row">
+            <div class='col-md-5'>
+            <Gallery>
+    <Item
+      original="https://placekitten.com/1024/768?image=1"
+      thumbnail="https://placekitten.com/80/60?image=1"
+      width="1024"
+      height="768"
+    >
+      {({ ref, open }) => (
+        <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=1" />
+      )}
+    </Item>
+    <Item
+      original="https://placekitten.com/1024/768?image=2"
+      thumbnail="https://placekitten.com/80/60?image=2"
+      width="1024"
+      height="768"
+    >
+      {({ ref, open }) => (
+        <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=2" />
+      )}
+    </Item>
+  </Gallery>
+            </div>
+            <div class='col-md-6'>
+                    <h4>description</h4>
+                    <ul>
+                      <li>hello</li>
+                      <li>hi</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    </div>
 
-//                 <div class="col-xs-12 col-sm-6 col-md-3 nopadding web others isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 216px, 0px);">
-//                     <div class="box">
-//                         <div class="hover-bg">
-//                             <div class="hover-text off">
-//                                 <a title="Freedom Project #1" href="img/portfolio/05.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/05.jpg">
-//                                     <i class="fa fa-expand"></i>
-//                                 </a>
-//                                 <a href="#"><i class="fa fa-chain"></i></a>
-//                             </div>
-//                             <img src="img/portfolio/05.jpg" class="img-responsive" alt="Image"/>
-//                         </div>
-//                     </div>
-//                 </div>
 
-//                 <div class="col-xs-12 col-sm-6 col-md-3 nopadding app isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(339px, 216px, 0px);">
-//                     <div class="box">
-//                         <div class="hover-bg">
-//                             <div class="hover-text off">
-//                                 <a title="Freedom Project #1" href="img/portfolio/06.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/06.jpg">
-//                                     <i class="fa fa-expand"></i>
-//                                 </a>
-//                                 <a href="#"><i class="fa fa-chain"></i></a>
-//                             </div>
-//                             <img src="img/portfolio/06.jpg" class="img-responsive" alt="Image"/>
-//                         </div>
-//                     </div>
-//                 </div>
+    <div class="carousel-item">
+    <div class='container'>
+        <div class="row">
+            <div class='col-md-5'>
+            <Gallery>
+    <Item
+      original="https://placekitten.com/1024/768?image=1"
+      thumbnail="https://placekitten.com/80/60?image=1"
+      width="1024"
+      height="768"
+    >
+      {({ ref, open }) => (
+        <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=1" />
+      )}
+    </Item>
+    <Item
+      original="https://placekitten.com/1024/768?image=2"
+      thumbnail="https://placekitten.com/80/60?image=2"
+      width="1024"
+      height="768"
+    >
+      {({ ref, open }) => (
+        <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=2" />
+      )}
+    </Item>
+  </Gallery>
+            </div>
+            <div class='col-md-6'>
+                    <h4>description</h4>
+                    <ul>
+                      <li>hello</li>
+                      <li>hi</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
 
-//                 <div class="col-xs-12 col-sm-6 col-md-3 nopadding web brand isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(678px, 216px, 0px);">
-//                     <div class="box">
-//                         <div class="hover-bg">
-//                             <div class="hover-text off">
-//                                 <a title="Freedom Project #1" href="img/portfolio/07.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/07.jpg">
-//                                     <i class="fa fa-expand"></i>
-//                                 </a>
-//                                 <a href="#"><i class="fa fa-chain"></i></a>
-//                             </div>
-//                             <img src="img/portfolio/07.jpg" class="img-responsive" alt="Image"/>
-//                         </div>
-//                     </div>
-//                 </div>
 
-//                 <div class="col-xs-12 col-sm-6 col-md-3 nopadding app isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(1017px, 216px, 0px);">
-//                     <div class="box">
-//                         <div class="hover-bg">
-//                             <div class="hover-text off">
-//                                 <a title="Freedom Project #1" href="img/portfolio/08.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/08.jpg">
-//                                     <i class="fa fa-expand"></i>
-//                                 </a>
-//                                 <a href="#"><i class="fa fa-chain"></i></a>
-//                             </div>
-//                             <img src="img/portfolio/08.jpg" class="img-responsive" alt="Image"/>
-//                         </div>
-//                     </div>
-//                 </div>
+  <button class="carousel-control-prev" style={{colot:'black'}} type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" style={{colot:'black'}} type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-//             </div>
+        </div>
+    );
+};
 
-//         </div>
-//     </section>
-//         </div>
-//     );
-// };
-
-// export default Projects;
+export default Projects;

@@ -9,7 +9,7 @@ const Home = () => {
              <div class="overlay">
             <div class="container">
                 <div class="content-heading text-center">
-                <h1 class="ml11">
+                <h1 class="ml11 ">
                                     {/* <Typical
                                         steps={['I am a', 1000, 'Frontend Developer', 2500]}
                                         loop={Infinity}
@@ -20,8 +20,9 @@ const Home = () => {
                                         loop={Infinity}
                                         wrapper="p"
                                     />
-                                    Frontend Developer
-                                </h1>
+
+                            </h1>
+                            <h2 class= "ml11 readMore"> Frontend Developer</h2>
                     <p class="lead">I Love to create beautiful and amazing Websites.</p>
                     <a href='https://drive.google.com/uc?export=download&id=1S0Pefi_6ZPLTGxxJLaC1X_GUI3F84UjN' class="scroll goto-btn">Download Resume</a>
                 </div>

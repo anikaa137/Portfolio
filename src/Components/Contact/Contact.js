@@ -37,9 +37,9 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact">
-            <div className="container">
-                <h1 className="pb-5">CONTACT ME</h1>
+        <div id="contact" style={{backgroundColor:" #38A5DB", color:"white", paddingTop:"50px"}}>
+            <div className="container form ">
+                <h1 className="pb-5 text-center title">CONTACT ME</h1>
                 <div className="row">
                     <div className="col-md-6">
                         <h3 className="pb-3">Get in touch</h3>
@@ -88,7 +88,7 @@ const Contact = () => {
                         </form>
                     </div>
                     <div className="col-md-6">
-                        <div className="bg-dark text-white p-4">
+                        <div className="bg-white text-dark p-4 shadow-lg p-3 mb-5 bg-body rounded">
                             <div className="d-flex align-items-center">
                                 <div className="p-3">
                                     <div className="border border-white p-2">
@@ -101,7 +101,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-dark text-white p-4 my-2">
+                        <div className="bg-white text-dark p-4 my-2 shadow-lg p-3 mb-5 bg-body rounded">
                             <div className="d-flex align-items-center">
                                 <div className="p-3">
                                     <div className="border border-white p-2">
@@ -114,7 +114,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-dark text-white p-4">
+                        <div className="bg-white text-dark p-4 shadow-lg p-3 mb-5 bg-body rounded" >
                             <div className="d-flex align-items-center">
                                 <div className="p-3">
                                     <div className="border border-white p-2">

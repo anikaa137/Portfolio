@@ -11,3 +11,20 @@
       font-size: 3.5rem;
     }
   }
+ .projects .btn{
+   width: 100px;
+   background-color:#38A5DB;
+   color:white;
+  font-weight: 700px;
+  font-size: 20px;
+ }
+ .projects {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 0 0 10px;
+ }

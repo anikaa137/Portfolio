@@ -7,7 +7,7 @@ const Navbar = () => {
             <nav class="navbar navbar-expand-lg   menu">
                 <div class="container-fluid container">
 
-              < p class="navbar-brand" to="/">Amina Anika</p>
+              <h1 class="navbar-brand " to="/">Amina Anika</h1>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@ const Navbar = () => {
           <a class="nav-link"   href="#blogs"  >Blogs</a>
                 </li>
                 <li class="nav-item">
-          <a class="nav-link"   href="#resume"  >Resume</a>
+          <a class="nav-link"   href="https://drive.google.com/file/d/1S0Pefi_6ZPLTGxxJLaC1X_GUI3F84UjN/view?usp=sharing"  >Resume</a>
                 </li>
                 <li class="nav-item">
           <a class="nav-link"   href="#contact"  >Contact</a>

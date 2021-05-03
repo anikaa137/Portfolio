@@ -1,7 +1,7 @@
 import React from "react";
 import  about from "../../images/about.png";
 import "./About.css";
- 
+
 
 
 // Wrap every letter in a span
@@ -43,8 +43,7 @@ const About = () => {
                     </h2>
                     <h5>
                         <em>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting.
+                        I am an frontend developer with knowing some framework. I know how to work under pressure.
                         </em>
                     </h5>
                     <hr/>
@@ -68,7 +67,7 @@ const About = () => {
                         <div class="mi-about-content me-5">
                             <h3>
                                 I am{" "}
-                                <span class="color-theme">Amina Anika</span>
+                                <span class="color-theme readMore">Amina Anika</span>
                             </h3>
                             <p>
                                 I am a frontend web developer. I can provide
@@ -81,7 +80,10 @@ const About = () => {
                                     <b>Full Name :</b> Amina Anika
                                 </li>
                                 <li>
-                                    <b>Age :</b> 20 Years
+                                    <b> Email :</b>  anikaa137@gmail.com
+                                </li>
+                                <li>
+                                    <b>Contact No :</b>  +880 1842643738
                                 </li>
                                 <li>
                                     <b>Nationality :</b> Bangladesh
@@ -92,9 +94,7 @@ const About = () => {
                                 <li>
                                     <b>Address :</b> Chittagong, Bangladesh
                                 </li>
-                                <li>
-                                    <b>Freelance :</b> Available
-                                </li>
+
                             </ul>
                             {/* <a class="mi-button" href="/files/empty.pdf">
                                 Download CV
@@ -108,7 +108,7 @@ const About = () => {
                 <div class="mi-service-area mi-section mi-padding-top">
                     <div class="container">
                         <div class="mi-sectiontitle">
-                            <h1>Services</h1>npm
+                            <h1 >I love to work</h1>
                             {/* <h1 class="ml14">
   <span class="text-wrapper">
     <span class="letters">Find Your Element</span>
@@ -122,13 +122,11 @@ const About = () => {
                         <div class="card" style={{ width: "18rem" }}>
                             <div class="card-body">
                                 <h1 class="card-title text-dark">
-                                    Web Development
+                                    Frontend Development
                                 </h1>
                                 <p class="card-text text-dark">
                                     {" "}
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Autem tenetur ratione
-                                    quod.
+                                    A front-end web developer is responsible for implementing visual and interactive elements that users engage with through their web browser when using a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do.
                                 </p>
                             </div>
                         </div>
@@ -139,9 +137,7 @@ const About = () => {
                                 </h1>
                                 <p class="card-text text-dark">
                                     {" "}
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Autem tenetur ratione
-                                    quod.
+                                    Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s overall functionality. Web design also includes web apps, mobile apps, and user interface design.
                                 </p>
                             </div>
                         </div>

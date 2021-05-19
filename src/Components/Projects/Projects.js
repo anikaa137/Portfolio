@@ -105,11 +105,14 @@ const Projects = () => {
                       <li>An admin can make another one as admin.</li>
                     </ul>
                     <br/>
-                    <a class="btn   mx-5" href="https://pakkapati-flooring-service.web.app/" role="button"> live </a>
+                    <div>
+                    <a class="btn   mx-5" type="button" href="https://pakkapati-flooring-service.web.app/" role="button"> Live </a>
 
+{/* <button type="button" class="btn btn-link">Link</button> */}
 
-                    <a class="btn " href="https://github.com/anikaa137/Flooring-Service-client" role="button">Github</a>
+                  <a class="btn " href="https://github.com/anikaa137/Flooring-Service-client" role="button">Github</a>
 
+                   </div>
             </div>
         </div>
     </div>
@@ -179,7 +182,7 @@ const Projects = () => {
                       <li>Admin can delete any product which will be removed from the home page also mongoDB database  collection.</li>
                     </ul>
                       <br/>
-                    <a class="btn   mx-5" href="https://happy-mart-fdc30.web.app/" role="button"> live </a>
+                    <a class="btn   mx-5" href="https://happy-mart-fdc30.web.app/" role="button"> Live </a>
 
 
                     <a class="btn " href="https://github.com/anikaa137/Happy-mart-client" role="button">Github</a>
@@ -253,7 +256,7 @@ const Projects = () => {
 
                     </ul>
                   <br/>
-                    <a class="btn   mx-5" href="https://vroom-riders.firebaseapp.com/" role="button"> live </a>
+                    <a class="btn   mx-5" href="https://vroom-riders.firebaseapp.com/" role="button"> Live </a>
 
 
                     <a class="btn " href="https://github.com/anikaa137/VRoom-Riders" role="button">Github</a>

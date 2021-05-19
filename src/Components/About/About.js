@@ -18,7 +18,7 @@ const About = () => {
                     </h2>
                     <h5>
                         <em>
-                        I am an frontend developer with knowing some framework. I know how to work under pressure.
+                        I am a frontend developer with knowing some frameworks & I know how to work under pressure.
                         </em>
                     </h5>
                     <hr/>
@@ -84,17 +84,11 @@ const About = () => {
                     <div class="container">
                         <div class="mi-sectiontitle">
                             <h1 >I love to work</h1>
-                            {/* <h1 class="ml14">
-  <span class="text-wrapper">
-    <span class="letters">Find Your Element</span>
-    <span class="line"></span>
-  </span>
-</h1> */}
 
                         </div>
-
+                        <div class="row  ">
                         <div class="d-flex justify-content-evenly mt-5" data-aos="fade-up">
-                        <div class="card" style={{ width: "18rem" }}>
+                        <div class="card  col-md-12  col-md-6" style={{ width: "18rem" }} >
                             <div class="card-body">
                                 <h1 class="card-title text-dark">
                                     Frontend Development
@@ -105,7 +99,7 @@ const About = () => {
                                 </p>
                             </div>
                         </div>
-                        <div class="card" style={{ width: "18rem" }}>
+                        <div class="card col-md-12 col-md-6" style={{ width: "18rem" }}>
                             <div class="card-body ">
                                 <h1 class="card-title text-dark">
                                     Web  Design
@@ -117,6 +111,8 @@ const About = () => {
                             </div>
                         </div>
                         </div>
+                            </div>
+
                     </div>
                 </div>
             </div>

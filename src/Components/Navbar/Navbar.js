@@ -3,11 +3,11 @@ import  "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <div>
+        <div  class="sticky-top">
             <nav class="navbar navbar-expand-lg   menu">
                 <div class="container-fluid container">
 
-              <h1 class="navbar-brand " to="/">Amina Anika</h1>
+           <a href="#home"> <h1 class="navbar-brand " >Amina Anika</h1></a>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

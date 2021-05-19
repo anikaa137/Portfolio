@@ -87,7 +87,7 @@ const Contact = () => {
                                 <label>Message</label>
                             </div>
                             <div className="d-grid gap-2">
-                                <button className="btn btn-primary" type='submit'>Send Email</button>
+                                <button className="btn btn-primary mb-5"  type='submit'>Send Email</button>
                             </div>
                         </form>
                     </div>

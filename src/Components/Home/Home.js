@@ -24,7 +24,7 @@ const Home = () => {
                             </h1>
                             <h2 class= "ml11 readMore"> Frontend Developer</h2>
                     <p class="lead">I Love to create beautiful and amazing Websites.</p>
-                    <a href='https://drive.google.com/uc?export=download&id=1NV5L_YMW60TzpjYxhEF7iQ4mzHRu_q66' class="scroll goto-btn">Download Resume</a>
+                    <a href='https://drive.google.com/uc?export=download&id=12Lp0igk-6sDDJjy64aZBoaHD0ObXpWii' class="scroll goto-btn">Download Resume</a>
                 </div>
         </div>
         </div>
